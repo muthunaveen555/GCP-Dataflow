@@ -1,0 +1,8 @@
+python3 -m \
+    wordcount \
+    --project mykubernetes-283719 --runner \
+    DataflowRunner --temp_location \
+    gs://nava-dataflow/temp --output \
+    gs://nava-dataflow/results/output \
+    --job_name dataflow-intro \
+    --region us-east1
